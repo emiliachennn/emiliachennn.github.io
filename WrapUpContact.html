@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="icon" type="image/png" href="Icon_Pink_Butterfly_Ring.png"> 
+<link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Nanum Myeongjo' rel='stylesheet'> 
+<link href='https://fonts.googleapis.com/css?family=Marceullus' rel='stylesheet'>
+<style> 
+
+body {
+background-color: #F2ECEB;
+font-family: 'Nanum Myeongjo';
+color: #000000;
+margin: 0;
+padding: 5%;
+}
+
+/* Navigation bar container */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #ffffff; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Logo style */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0b0202; 
+    transition: color 0.3s ease; 
+}
+
+.logo:hover {
+    color: #ac6963; 
+}
+
+.logo img {
+    width: 50px; 
+    height: auto;
+    margin-right: -10px; 
+    transition: filter 0.3s ease; 
+}
+
+.logo:hover img {
+    filter: brightness(0.8); 
+}
+
+.logo span {
+    font-size: 22px;
+    font-family: 'Times New Roman', serif;
+    color: inherit; 
+} 
+
+/* Navigation bar links */
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; 
+}
+
+.navbar li {
+    margin: 0 15px; 
+}
+
+.navbar li a {
+    display: inline-block;
+    color: #0b0202; 
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.navbar li a:hover {
+    color: #ac6963; 
+    background-color: transparent; 
+}
+
+.navbar li a.active {
+    color: #ac6963; 
+    background-color: transparent; 
+}
+
+.breadcrumb-container {
+    background-color: #ffffff;
+    width: 95.5%; 
+    max-width: 1200px; 
+    margin: 60px auto 0; /* Adds space below the navbar */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb-container p {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Playfair Display', serif;
+    color: #c27770;
+    text-align: left;
+}
+
+/* Contact Info Header */
+.contact-header {
+    text-align: center; 
+    margin: 50px auto; 
+    padding: 20px;
+}
+
+.contact-header h1 {
+    font-size: 36px; 
+    color: #732C26; 
+    margin-bottom: 10px; 
+}
+
+/* Contact Intro Section */
+.contact-intro {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #5a1a1a;
+}
+
+/* Contact Information Section */
+.contact-info {
+    text-align: center;
+    margin: 40px auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #732C26;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #732C26;
+}
+
+.info-icon {
+    width: 20px; /* Adjust the size of the icons */
+    height: auto;
+    vertical-align: middle; /* Aligns the icon with the text */
+    margin-right: 10px; /* Adds spacing between the icon and text */
+} 
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px auto;
+    max-width: 800px;
+    font-family: 'Playfair Display', serif;
+    color: #5a1a1a;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #732C26;
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    color: #732C26;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #5a1a1a;
+}
+
+/* Bottom Banner Section */
+.bottom-banner {
+    margin: 40px auto; 
+    text-align: center; 
+}
+
+.banner-image {
+    width: 100%; 
+    max-width: 1200px;
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Bottom Banner Section */
+.bottom-banner {
+    position: relative; 
+    margin: 40px auto; 
+    text-align: center; 
+}
+
+.banner-image {
+    width: 100%; 
+    max-width: 1200px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Text Overlay on Banner */
+.banner-text {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #ffffff; 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); 
+    z-index: 2; 
+}
+
+.banner-text h1 {
+    font-size: 100px; 
+    margin-bottom: 10px; 
+    font-family: 'Playfair Display', serif;
+}
+
+
+/* Social Media Section */
+.social-media {
+    text-align: center;
+    margin: 40px auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #5a1a1a;
+}
+
+.social-media h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #732C26;
+}
+
+.social-media a {
+    color: #ac6963;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #732C26;
+}
+ 
+
+</style> 
+<body> 
+    <div class="navbar-container">
+        <a href="WrapUpHome.html" class="logo">
+            <img src="Icon_Pink_Butterfly_Ring.png" alt="Logo Icon">
+            <span>Vysara</span>
+        </a>
+    
+        <div class="navbar">
+            <ul>
+                <li><a href="WrapUpHome.html">Home</a></li>
+                <li><a href="WrapUpShop.html">Shop</a></li>
+                <li><a href="WrapUpAbout.html">About Us</a></li>
+                <li><a href="WrapUpContact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </div> 
+
+    <div class="breadcrumb-container">
+        <p>Vysara / Contact Us</p>
+    </div> 
+
+    <div class="collection-header">
+        <h1>~ Contact Us ~</h1> 
+        <div class="contact-intro">
+            <p>
+                We'd love to hear from you! Whether you have questions about our products, need assistance, or just want to share your thoughts, feel free to reach out to us. 
+                Our team is here to help and ensure you have the best experience with Vysara.
+            </p>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><img src="Email_Icon_Contact.png" alt="Email Icon" class="info-icon"> <strong>Email:</strong> support@vysara.com</p>
+            <p><img src="Phone_Icon_Contact.png" alt="Phone Icon" class="info-icon"> <strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><img src="Address_Icon_Contact.png" alt="Address Icon" class="info-icon"> <strong>Address:</strong> 123 Jewelry Lane, Dream City, Wonderland</p>
+        </div>
+        
+        <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <h3>What is the return policy?</h3>
+        <p>We accept returns within 30 days of purchase. Items must be in their original condition and packaging.</p>
+    </div>
+    <div class="faq-item">
+        <h3>How can I track my order?</h3>
+        <p>Once your order is shipped, you will receive a tracking number via email to monitor its progress.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Do you offer custom jewelry designs?</h3>
+        <p>Yes, we specialize in custom jewelry designs. Contact us to discuss your vision, and we’ll bring it to life!</p>
+    </div>
+</div>
+
+<div class="bottom-banner">
+    <div class="banner-text">
+        <h1>THANK YOU!</h1>
+    </div>
+    <img src="Banner_Contact.jpg" alt="Discover Vysara" class="banner-image">
+</div>
+   
+   
+</div>
+<div class="social-media">
+    <h2>Follow Us</h2>
+    <p>Stay connected with us on social media:</p>
+    <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+    <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+</div>
+</body>
+</head>
+</html> 
+ 
+        

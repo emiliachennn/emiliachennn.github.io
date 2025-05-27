@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shop</title>
+<link rel="icon" type="image/png" href="Icon_Pink_Butterfly_Ring.png"> 
+<link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Nanum Myeongjo' rel='stylesheet'> 
+<link href='https://fonts.googleapis.com/css?family=Marceullus' rel='stylesheet'>
+<style> 
+
+body {
+background-color: #F2ECEB;
+font-family: 'Nanum Myeongjo';
+color: #000000;
+margin: 0;
+padding: 5%;
+}
+
+/* Navigation bar container */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    background-color: #ffffff; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; 
+    gap: 15px; 
+}
+
+.navbar li a {
+    display: inline-block;
+    color: #0b0202; 
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.navbar li a:hover {
+    color: #ac6963; 
+    background-color: transparent; 
+}
+
+.navbar li a.active {
+    color: #ac6963; 
+    background-color: transparent; 
+} 
+
+/* Logo style */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0b0202; 
+    transition: color 0.3s ease; 
+}
+
+.logo:hover {
+    color: #ac6963; 
+}
+
+.logo img {
+    width: 50px; 
+    height: auto;
+    margin-right: -10px; 
+    transition: filter 0.3s ease; 
+}
+
+.logo:hover img {
+    filter: brightness(0.8); 
+}
+
+.logo span {
+    font-size: 22px;
+    font-family: 'Times New Roman', serif;
+    color: inherit; 
+} 
+
+/* Navigation bar links */
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; 
+}
+
+.navbar li {
+    margin: 0 15px; 
+}
+
+.navbar li a {
+    display: inline-block;
+    color: #0b0202; 
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.navbar li a:hover {
+    color: #ac6963; 
+    background-color: transparent; 
+}
+
+.navbar li a.active {
+    color: #ac6963; 
+    background-color: transparent; 
+}
+
+/* Collection Header */
+.collection-header {
+    text-align: center; 
+    margin: 50px auto; 
+    padding: 20px;
+}
+
+.collection-header h1 {
+    font-size: 36px; 
+    color: #732C26; 
+    margin-bottom: 10px; 
+}
+
+.collection-links a {
+    font-size: 18px; 
+    color: #ac6963; 
+    text-decoration: none; 
+    margin: 0 10px; 
+    transition: color 0.3s ease; 
+}
+
+.collection-links a:hover {
+    color: #732C26; 
+}
+
+
+.collection-section .collection-item-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.collection-item {
+    text-align: center; 
+}
+
+.collection-image {
+    width: 200px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+}
+
+.collection-image:hover {
+    transform: scale(1.1); 
+}
+
+.item-description {
+    font-size: 16px; 
+    color: #5a1a1a; 
+    margin-top: 10px; 
+}
+
+
+</style>
+</head>
+<body> 
+    <div class="navbar-container">
+        <a href="WrapUpHome.html" class="logo">
+            <img src="Icon_Pink_Butterfly_Ring.png" alt="Logo Icon">
+            <span>Vysara</span>
+        </a>
+    
+        <div class="navbar">
+            <ul>
+                <li><a href="WrapUpHome.html">Home</a></li>
+                <li><a href="WrapUpShop.html" class="active">Shop</a></li>
+                <li><a href="WrapUpAbout.html">About Us</a></li>
+                <li><a href="WrapUpContact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+     <!-- Collection Header -->
+     <div class="collection-header">
+        <h1>~ Collection ~</h1>
+        <div class="collection-links">
+            <a href="#necklaces">Necklaces</a> | 
+            <a href="#rings">Rings</a> | 
+            <a href="#bracelets">Bracelets</a>
+        </div>
+    </div>
+
+    <div id="necklaces" class="collection-section">
+        <h2>Necklaces</h2>
+        <p>Explore our exquisite collection of necklaces, crafted with precision and elegance.</p>
+        <div class="collection-item-container">
+            <div class="collection-item">
+                <img src="Pearl_Necklace_Shop.png" alt="Pearl Necklace" class="collection-image">
+                <p class="item-description"> Sterling Silver Pearl Necklace <br>$90</p>
+            </div>
+            <div class="collection-item">
+                <img src="Flower_Necklace_Shop.png" alt="Flower Necklace" class="collection-image">
+                <p class="item-description">Flower Shell Necklace <br> $69</p>
+            </div>
+            <div class="collection-item">
+                <img src="Feather_Necklace_Shop.png" alt="Feather Necklace" class="collection-image">
+                <p class="item-description">Fine Silver Feather Necklace <br> $83</p>
+            </div>
+        </div>
+    </div>
+
+<!-- Rings Section -->
+<div id="rings" class="collection-section">
+    <h2>Rings</h2>
+    <p>Discover our stunning range of rings, designed to make every moment special.</p>
+    <div class="collection-item-container">
+        <div class="collection-item">
+            <img src="Butterfly_Ring_Shop.png" alt="Sterling Silver Blue Butterfly Rings" class="collection-image">
+            <p class="item-description">Sterling Silver Blue Butterfly Rings <br> $77</p>
+        </div>
+        <div class="collection-item">
+            <img src="Pink_Butterfly_Ring_Shop.png" alt="Dreamy Pink Butterfly Ring" class="collection-image">
+            <p class="item-description">Dreamy Pink Butterfly Gold Ring <br> $69 </p>
+        </div>
+        <div class="collection-item">
+            <img src="Jasmine_Flower_Ring_Shop.png" alt="Jasmine Flower Ring" class="collection-image">
+            <p class="item-description">Jasmine Flower Ring <br> $63</p>
+        </div>
+    </div>
+</div>
+
+<!-- Bracelets Section -->
+<div id="bracelets" class="collection-section">
+    <h2>Bracelets</h2>
+    <p>Adorn your wrists with our elegant and timeless bracelets.</p>
+    <div class="collection-item-container">
+        <div class="collection-item">
+            <img src="Star_Braclet_Shop.png" alt="Star Bracelet" class="collection-image">
+            <p class="item-description">Sterling Silver Ten Stars Braclet <br> $75</p>
+        </div>
+        <div class="collection-item">
+            <img src="Pink_Flower_Braclet_Shop.png" alt="Gold Bracelet" class="collection-image">
+            <p class="item-description">Peach Blossom Braclet <br> $87</p>
+        </div>
+        <div class="collection-item">
+            <img src="Silver_Fortune_Braclet_Shop.png" alt="Silver Bracelet" class="collection-image">
+            <p class="item-description">Silver Fortune Bracelet <br> $80 </p>
+        </div>
+    </div>
+</div> 
+</body>
+</html> 

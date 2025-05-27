@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us</title>
+<link rel="icon" type="image/png" href="Icon_Pink_Butterfly_Ring.png"> 
+<link href='https://fonts.googleapis.com/css?family=Times New Roman' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Nanum Myeongjo' rel='stylesheet'> 
+<link href='https://fonts.googleapis.com/css?family=Marceullus' rel='stylesheet'>
+<style> 
+
+body {
+background-color: #F2ECEB;
+font-family: 'Nanum Myeongjo';
+color: #000000;
+margin: 0;
+padding: 5%;
+}
+
+/* Navigation bar container */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    background-color: #ffffff; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; 
+    gap: 15px; 
+}
+
+.navbar li a {
+    display: inline-block;
+    color: #0b0202; 
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.navbar li a:hover {
+    color: #ac6963; 
+    background-color: transparent; 
+}
+
+.navbar li a.active {
+    color: #ac6963; 
+    background-color: transparent; 
+} 
+
+/* Logo style */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0b0202; 
+    transition: color 0.3s ease; 
+}
+
+.logo:hover {
+    color: #ac6963; 
+}
+
+.logo img {
+    width: 50px; 
+    height: auto;
+    margin-right: -10px; 
+    transition: filter 0.3s ease; 
+}
+
+.logo:hover img {
+    filter: brightness(0.8); 
+}
+
+.logo span {
+    font-size: 22px;
+    font-family: 'Times New Roman', serif;
+    color: inherit; 
+} 
+
+/* Navigation bar links */
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; 
+}
+
+.navbar li {
+    margin: 0 15px; 
+}
+
+.navbar li a {
+    display: inline-block;
+    color: #0b0202; 
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.navbar li a:hover {
+    color: #ac6963; 
+    background-color: transparent; 
+}
+
+.navbar li a.active {
+    color: #ac6963; 
+    background-color: transparent; 
+}
+
+/* Main container style */
+.main-container {
+    position: relative;
+    text-align: left; 
+    background-image: url('AboutUs_Banner.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+    height: 400px;
+    margin: 0 auto; 
+    display: flex; 
+    align-items: center; 
+    color: #ffffff; 
+}
+
+/* Text inside the main container */
+.main-container #text {
+    padding: 25px;
+    font-size: 30px;
+    color: #732C26; 
+    font-family: 'Playfair Display', serif;
+    margin-left: 60px; 
+    line-height: 1.5; 
+}
+
+/* Image on top of the banner */
+.main-container img.overlay-image {
+    position: absolute;
+    top: 50%; 
+    right: 30px; 
+    transform: translateY(-50%); 
+    width: 300px; 
+    height: auto; 
+}
+
+.breadcrumb-container {
+    background-color: #ffffff;
+    width: 95.5%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb-container p {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Playfair Display', serif;
+    color: #c27770;
+    text-align: left;
+}
+
+/* Body content container */
+.body-content {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    margin: 20px auto; 
+    max-width: 1200px; 
+}
+
+/* Image on the left */
+.about-image {
+    width: 300px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Body text style */
+.body-text {
+    text-align: center; 
+    margin: 20px auto; 
+    max-width: 800px; 
+    font-family: 'Playfair Display', serif; 
+    font-size: 18px; 
+    line-height: 1.8; 
+    color: #000000; 
+} 
+
+/* Subtitle style */
+.section-subtitle {
+    text-align: center; 
+    font-family: 'Playfair Display', serif; 
+    font-size: 24px; 
+    color: #732C26; 
+    margin: 40px 0 20px; 
+}
+
+/* Reverse layout for image on the right */
+.reverse-layout {
+    flex-direction: row-reverse; 
+}
+
+</style>
+
+
+<body> 
+    <div class="navbar-container">
+        <a href="WrapUpHome.html" class="logo">
+            <img src="Icon_Pink_Butterfly_Ring.png" alt="Logo Icon">
+            <span>Vysara</span>
+        </a>
+    
+        <div class="navbar">
+            <ul>
+                <li><a href="WrapUpHome.html">Home</a></li>
+                <li><a href="WrapUpShop.html">Shop</a></li>
+                <li><a href="WrapUpAbout.html" class="active" >About Us</a></li>
+                <li><a href="WrapUpContact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div> 
+
+    <div class="main-container">
+        <div id="text">
+            <h1>About Us</h1> 
+            <img src="Butterfly_Ring_Shop.png" alt="Overlay Image" class="overlay-image">
+        </div>
+    </div>
+    
+    <div class="breadcrumb-container">
+        <p>Vysara / About Us</p>
+    </div>
+
+    <div class="body-content">
+        <img src="Vysera_FairyLand_About .jpeg" alt="About Vysara" class="about-image">
+    <div class="body-text">
+        <p>
+            Vysara was created just recently in 2025 of May. Vysara is a jewelry brand thats like no other, where its like a magical portal to a complete new world of charm. It all began 
+            with the vision of creating jewelry pieces that would make any who wore them feel like they're in a fairytale. The name "Vysara" was carefully picked to show a sense of mystery
+            elegance, and allure, just like our jewelry pieces. The name combines the two words; Vivid, and Stellar. The inspiration for creating Vysara was simply when I had one of those 
+            dreams where I never wanted to wake up. There were beautiful butterflies flying around, colored flowers, and a mythical forest. The brand draws on this inspiration and each piece
+            is crafted to look as if it was plucked from a dream. 
+        </p>
+    </div>
+</div>  
+
+<h2 class="section-subtitle">About the Founder</h2>
+
+<div class="body-content reverse-layout">
+    <div class="body-text">
+        <p>
+            The founder of Vysara, Emilia, has always been inspired by the beauty of nature and the magic of dreams. 
+            With a background in design and a passion for storytelling, Emilia envisioned a jewelry brand that would 
+            bring fairytales to life. Each piece is a reflection of her creativity, dedication, and love for crafting 
+            timeless treasures. Emilia believes that jewelry is more than just an accessory—it’s a way to express 
+            individuality and capture the essence of a moment.
+            <br><br><span><em>This content was created with the help of A.I.</em></span>
+        </p>
+    </div>
+    <img src="AboutUs_ME.png" alt="About the Founder" class="about-image">
+</div>
+</body>
+</head>
+</html>
+
